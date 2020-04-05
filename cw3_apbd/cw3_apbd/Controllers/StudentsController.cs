@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using cw3_apbd.Models;
@@ -12,27 +13,29 @@ namespace cw3_apbd.Controllers
     [Route("api/students")]
     public class StudentsController : ControllerBase
     {
-        private readonly IDbService _dbService;
+        
 
-        public StudentsController(IDbService dbService)
+        private IDbStudent _dbStudent;
+
+        public StudentsController(IDbStudent dbStudent)
         {
-            _dbService = dbService;
+            _dbStudent = dbStudent;
         }
 
         [HttpGet]
-        public IActionResult GetStudents(string orderBy)
+        public IActionResult GetStudents()
         {
-            return Ok(_dbService.GetStudents());
-        }
-        [HttpGet("{id}")]
-        public IActionResult GetStudent(int id)
-        {
-            if (id == 1)
-                return Ok("Kowalski");
-            else if (id == 2)
-                return Ok("Malewski");
+            var list = _dbStudent.GetStudents();
 
-            return NotFound("Nie znaleziono studenta");
+            return Ok(list);
+        }
+
+        [HttpGet("{indexNumber}")]
+        public IActionResult GetStudentEnrollments(string indexNumber)
+        {
+            var list = _dbStudent.GetStudentEnrollments(indexNumber);
+           
+            return Ok(list);
         }
 
         [HttpPost]

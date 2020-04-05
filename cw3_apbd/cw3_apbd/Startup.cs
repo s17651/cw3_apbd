@@ -22,7 +22,7 @@ namespace cw3_apbd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IDbService, MockDbService>();
+            services.AddScoped<IDbStudent, DbStudent>();
             services.AddControllers();
 
             // In production, the React files will be served from this directory

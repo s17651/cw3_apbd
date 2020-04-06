@@ -33,9 +33,13 @@ namespace cw3_apbd.Controllers
         [HttpGet("{indexNumber}")]
         public IActionResult GetStudentEnrollments(string indexNumber)
         {
-            var list = _dbStudent.GetStudentEnrollments(indexNumber);
-           
-            return Ok(list);
+            var enrollment = _dbStudent.GetStudentEnrollment(indexNumber);
+
+            if (enrollment == null)
+            {
+                return NotFound();
+            }
+            return Ok(enrollment);
         }
 
         [HttpPost]

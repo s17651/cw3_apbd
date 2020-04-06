@@ -10,6 +10,6 @@ namespace cw3_apbd.Service
     {
         public ICollection<Student> GetStudents();
 
-        public ICollection<Enrollment> GetStudentEnrollments(string indexNumber);
+        public Enrollment GetStudentEnrollment(string indexNumber);
     }
 }

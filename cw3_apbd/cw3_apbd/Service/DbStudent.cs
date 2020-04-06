@@ -11,9 +11,8 @@ namespace cw3_apbd.Service
     {
         private const string ConString = "Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s17651;Integrated Security=True";
 
-        public ICollection<Enrollment> GetStudentEnrollments(string indexNumber)
+        public Enrollment GetStudentEnrollment(string indexNumber)
         {
-            var resultList = new List<Enrollment>();
             using (SqlConnection con = new SqlConnection(ConString))
             using (SqlCommand com = new SqlCommand())
             {
@@ -27,18 +26,18 @@ namespace cw3_apbd.Service
 
                 con.Open();
                 SqlDataReader dr = com.ExecuteReader();
-                while (dr.Read())
+                if (dr.Read())
                 {
                     var enrollment = new Enrollment();
                     enrollment.IdEnrollment = (int)dr["IdEnrollment"];
                     enrollment.Semester = (int)dr["Semester"];
                     enrollment.IdStudy = (int)dr["IdStudy"];
                     enrollment.StartDate = dr["StartDate"].ToString();
-                    resultList.Add(enrollment);
 
+                    return enrollment;
                 }
             }
-            return resultList;
+            return null;
         }
 
         public ICollection<Student> GetStudents()

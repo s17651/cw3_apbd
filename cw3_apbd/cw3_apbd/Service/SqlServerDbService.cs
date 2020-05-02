@@ -11,6 +11,7 @@ namespace cw3_apbd.Service
     public class SqlServerDbService : IStudentsDBService
     {
         private const string ConString = "Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s17651;Integrated Security=True";
+
         public FunctionData InsertStudent(Student student)
         {
             FunctionData result = new FunctionData(true);
@@ -151,7 +152,7 @@ namespace cw3_apbd.Service
                 }
                 else if (rows > 0)
                 {
-                    com.CommandText = "Select * from Enrollment  where semester=@semester + 1 and IdStudy=(select idStudy from Studies where name=@studies) order by StartDate desc";
+                    com.CommandText = "Select * from Enrollment where semester=@semester + 1 and IdStudy=(select idStudy from Studies where name=@studies) order by StartDate desc";
                     dr = com.ExecuteReader();
                     if (dr.Read())
                     {
@@ -168,6 +169,36 @@ namespace cw3_apbd.Service
 
             }
             return result;
+        }
+
+        public Student GetStudent(string indexNumber)
+        {
+            Student student = null;
+            using (SqlConnection con = new SqlConnection(ConString))
+            using (SqlCommand com = new SqlCommand())
+            {
+                com.Connection = con;
+                com.CommandText = "select st.IndexNumber, st.FirstName, st.LastName, st.BirthDate, ss.Name, et.Semester" +
+                                  " from student st, Enrollment et, Studies ss " +
+                                  "where st.IdEnrollment = et.IdEnrollment and et.IdStudy = ss.IdStudy and st.IndexNumber = @IndexNumber";
+                com.Parameters.AddWithValue("IndexNumber", indexNumber);
+                
+                con.Open();
+                SqlDataReader dr = com.ExecuteReader();
+                if (dr.Read())
+                {
+                    student = new Student
+                    {
+                        IndexNumber = dr["IndexNumber"].ToString(),
+                        FirstName = dr["FirstName"].ToString(),
+                        LastName = dr["LastName"].ToString(),
+                        BirthDate = dr["BirthDate"].ToString(),
+                        StudiesName = dr["Name"].ToString(),
+                        Semester = (int)dr["Semester"]
+                    };
+                }
+            }
+            return student;
         }
     }
 }

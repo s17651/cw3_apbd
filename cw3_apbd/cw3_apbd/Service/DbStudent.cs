@@ -52,7 +52,7 @@ namespace cw3_apbd.Service
                 com.Connection = con;
                 com.CommandText = "select st.FirstName, st.LastName, st.BirthDate, ss.Name, et.Semester" +
                                   " from student st, Enrollment et, Studies ss " +
-                                  "where st.IdEnrollment = et.IdEnrollment and st.IdEnrollment = ss.IdStudy ";
+                                  "where st.IdEnrollment = et.IdEnrollment and et.IdStudy = ss.IdStudy ";
 
                 con.Open();
                 SqlDataReader dr = com.ExecuteReader();

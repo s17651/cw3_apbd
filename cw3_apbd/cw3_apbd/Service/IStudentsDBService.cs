@@ -11,5 +11,6 @@ namespace cw3_apbd.Service
     {
         public FunctionData InsertStudent(Student student);
         public FunctionData PromoteStudents(int semesterm, string studies);
+        public Student GetStudent(string indexNumber);
     }
 }

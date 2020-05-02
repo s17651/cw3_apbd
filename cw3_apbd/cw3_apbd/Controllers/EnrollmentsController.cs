@@ -23,7 +23,7 @@ namespace cw3_apbd.Controllers
         [HttpPost]
         public IActionResult CreateStudent(StudentEnrollmentRequest requestStudent)
         {
-            var newStudent = requestStudent.MapFromRequest();
+            var newStudent = requestStudent.MapToStudent();
             newStudent.Semester = 1;
             FunctionData result = _studentDbService.InsertStudent(newStudent);
 

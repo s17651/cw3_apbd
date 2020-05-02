@@ -33,7 +33,7 @@ namespace cw3_apbd.Models
         [MaxLength(2)]
         public string StudiesName { get; set; }
 
-        public Student MapFromRequest()
+        public Student MapToStudent()
         {
             Student resultStudent = new Student
             {
@@ -45,7 +45,6 @@ namespace cw3_apbd.Models
             };
 
             return resultStudent;
-
         }
 
     }

@@ -23,6 +23,7 @@ namespace cw3_apbd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IDbStudent, DbStudent>();
+            services.AddScoped<IStudentsDBService, SqlServerDbService>();
             services.AddControllers();
 
             // In production, the React files will be served from this directory

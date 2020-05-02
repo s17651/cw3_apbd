@@ -1,4 +1,5 @@
 ﻿using cw3_apbd.Models;
+using cw3_apbd.Tools;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -28,11 +29,13 @@ namespace cw3_apbd.Service
                 SqlDataReader dr = com.ExecuteReader();
                 if (dr.Read())
                 {
-                    var enrollment = new Enrollment();
-                    enrollment.IdEnrollment = (int)dr["IdEnrollment"];
-                    enrollment.Semester = (int)dr["Semester"];
-                    enrollment.IdStudy = (int)dr["IdStudy"];
-                    enrollment.StartDate = dr["StartDate"].ToString();
+                    var enrollment = new Enrollment
+                    {
+                        IdEnrollment = (int)dr["IdEnrollment"],
+                        Semester = (int)dr["Semester"],
+                        IdStudy = (int)dr["IdStudy"],
+                        StartDate = dr["StartDate"].ToString()
+                    };
 
                     return enrollment;
                 }
@@ -55,12 +58,14 @@ namespace cw3_apbd.Service
                 SqlDataReader dr = com.ExecuteReader();
                 while (dr.Read())
                 {
-                    var student = new Student();
-                    student.FirstName = dr["FirstName"].ToString();
-                    student.LastName = dr["LastName"].ToString();
-                    student.BirthDate = dr["BirthDate"].ToString();
-                    student.StudiesName = dr["Name"].ToString();
-                    student.Semester = (int)dr["Semester"];
+                    var student = new Student
+                    {
+                        FirstName = dr["FirstName"].ToString(),
+                        LastName = dr["LastName"].ToString(),
+                        BirthDate = dr["BirthDate"].ToString(),
+                        StudiesName = dr["Name"].ToString(),
+                        Semester = (int)dr["Semester"]
+                    };
                     resultList.Add(student);
                 }
             }

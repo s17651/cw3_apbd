@@ -7,7 +7,7 @@ namespace cw3_apbd.Models
 {
     public class Student
     {
-        public String IndexNumber { get; set; }
+        public string IndexNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string BirthDate { get; set; }

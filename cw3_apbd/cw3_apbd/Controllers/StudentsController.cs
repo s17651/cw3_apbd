@@ -14,7 +14,6 @@ namespace cw3_apbd.Controllers
     public class StudentsController : ControllerBase
     {
         
-
         private IDbStudent _dbStudent;
 
         public StudentsController(IDbStudent dbStudent)

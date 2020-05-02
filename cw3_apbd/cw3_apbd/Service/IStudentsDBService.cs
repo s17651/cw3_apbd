@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace cw3_apbd.Service
 {
-    public interface IDbStudent
+    public interface IStudentsDBService
     {
-        public ICollection<Student> GetStudents();
-
-        public Enrollment GetStudentEnrollment(string indexNumber);
+        public FunctionData InsertStudent(Student student);
+        public FunctionData PromoteStudents(int semesterm, string studies);
     }
 }

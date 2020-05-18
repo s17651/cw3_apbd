@@ -1,0 +1,771 @@
+17.05.2020 12:03:51
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:03:51
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:04:21
+Path: /api/enrollments
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:04:21
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:04:38
+Path: /api/enrollments
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:04:38
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:32
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:32
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:40
+Path: /api/students/1
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:40
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:43
+Path: /api/students/s100
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:06:43
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 12:07:42
+Path: /api/students
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+17.05.2020 12:08:25
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+17.05.2020 21:14:49
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:14:49
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:15:28
+Path: /api/students/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:15:52
+Path: /api/students/GetStudents
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:16:59
+Path: /api/students/GetStudents
+Method: GET
+Query: ?index=s100
+Body: 
+
+17.05.2020 21:17:20
+Path: /api/students/GetStudents
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:17:28
+Path: /api/students/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:19:47
+Path: /api/students/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:21:21
+Path: /api/enrollments/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:21:22
+Path: /api/enrollments/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:21:47
+Path: /api/enrollments/
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:22:08
+Path: /api/enrollments/promotions
+Method: GET
+Query: 
+Body: 
+
+17.05.2020 21:22:46
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+17.05.2020 21:23:04
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+17.05.2020 21:24:03
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:12:55
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:12:55
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:13:04
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:16:56
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:16:56
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:17:57
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:19:20
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:19:56
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:21:16
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:21:16
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:21:19
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:23:11
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:23:11
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:23:15
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:24:04
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 20:24:15
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:24:31
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:24:31
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 20:24:33
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 21:04:11
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:04:11
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:04:15
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 21:04:54
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 21:06:25
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:06:25
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:06:25
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 21:07:20
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:07:20
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:07:25
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 21:52:32
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:52:32
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:53:27
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:54:28
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:54:28
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:54:31
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:54:48
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:55:05
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:55:05
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:55:06
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:55:39
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:55:48
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:55:49
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 21:55:52
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:56:41
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:56:47
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:57:09
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:57:26
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:57:55
+Path: /api/enrollments/
+Method: POST
+Query: ?index=s23123
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:58:02
+Path: /api/enrollments/
+Method: POST
+Query: ?Index=s23123
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:58:15
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:58:33
+Path: /api/enrollments/
+Method: POST
+Query: ?Index=s23123
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:59:02
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:59:10
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 21:59:28
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+	"indexnumber": "s500",
+	"firstname": "Marcin",
+	"lastname": "Psikuta",
+	"birthdate": "1966-04-20",
+	"studiesname": "IT"
+}
+
+18.05.2020 21:59:58
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 22:00:08
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 22:00:13
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 22:17:29
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:17:29
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:17:34
+Path: /api/enrollments/promotions
+Method: POST
+Query: 
+Body: {
+"Studies": "IT",
+"Semester": 2
+}
+
+18.05.2020 22:17:40
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "2"
+}
+
+18.05.2020 22:44:03
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:44:03
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:44:05
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "AlaMaKota"
+}
+
+18.05.2020 22:51:49
+Path: /api/students
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:51:49
+Path: /favicon.ico
+Method: GET
+Query: 
+Body: 
+
+18.05.2020 22:51:51
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "AlaMaKota2"
+}
+
+18.05.2020 22:52:11
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "IT",
+"Password": "AlaMaKota"
+}
+
+18.05.2020 22:52:39
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "s100",
+"Password": "AlaMaKota"
+}
+
+18.05.2020 22:52:52
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "s100",
+"Password": "AlaMaKot2"
+}
+
+18.05.2020 22:53:13
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "s100",
+"Password": "AlaMaKot"
+}
+
+18.05.2020 22:53:21
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "s100",
+"Password": "AlaMaKot"
+}
+
+18.05.2020 22:53:28
+Path: /api/enrollments/
+Method: POST
+Query: 
+Body: {
+"login": "s100",
+"Password": "AlaMaKota"
+}
+

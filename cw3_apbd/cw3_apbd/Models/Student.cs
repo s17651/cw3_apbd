@@ -13,7 +13,6 @@ namespace cw3_apbd.Models
         public string BirthDate { get; set; }
         public string StudiesName { get; set; }
         public int Semester { get; set; }
-
-
+        public String Password { get; set; } 
     }
 }

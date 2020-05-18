@@ -90,13 +90,14 @@ namespace cw3_apbd.Service
                     dr.Close();
                     com.Parameters.Clear();
 
-                    com.CommandText = "insert into Student(IndexNumber, FirstName, LastName, BirthDate, IdEnrollment) " +
-                                       "values(@IndexNumber, @FirstName, @LastName, @BirthDate, @IdEnrollment)";
+                    com.CommandText = "insert into Student(IndexNumber, FirstName, LastName, BirthDate, IdEnrollment, Password) " +
+                                       "values(@IndexNumber, @FirstName, @LastName, @BirthDate, @IdEnrollment, @Password)";
                     com.Parameters.AddWithValue("IndexNumber", student.IndexNumber);
                     com.Parameters.AddWithValue("FirstName", student.FirstName);
                     com.Parameters.AddWithValue("LastName", student.LastName);
                     com.Parameters.AddWithValue("BirthDate", student.BirthDate);
                     com.Parameters.AddWithValue("IdEnrollment", IdEnrollment);
+                    com.Parameters.AddWithValue("Password", SHA256Coder.GetHashFromString(student.Password));
 
                     com.ExecuteNonQuery();
 
@@ -178,7 +179,7 @@ namespace cw3_apbd.Service
             using (SqlCommand com = new SqlCommand())
             {
                 com.Connection = con;
-                com.CommandText = "select st.IndexNumber, st.FirstName, st.LastName, st.BirthDate, ss.Name, et.Semester" +
+                com.CommandText = "select st.IndexNumber, st.FirstName, st.LastName, st.BirthDate, st.Password, ss.Name, et.Semester" +
                                   " from student st, Enrollment et, Studies ss " +
                                   "where st.IdEnrollment = et.IdEnrollment and et.IdStudy = ss.IdStudy and st.IndexNumber = @IndexNumber";
                 com.Parameters.AddWithValue("IndexNumber", indexNumber);
@@ -194,11 +195,13 @@ namespace cw3_apbd.Service
                         LastName = dr["LastName"].ToString(),
                         BirthDate = dr["BirthDate"].ToString(),
                         StudiesName = dr["Name"].ToString(),
-                        Semester = (int)dr["Semester"]
+                        Semester = (int)dr["Semester"],
+                        Password = dr["Password"].ToString()
                     };
                 }
             }
             return student;
         }
+
     }
 }

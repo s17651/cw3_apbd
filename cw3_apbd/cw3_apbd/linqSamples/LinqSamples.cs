@@ -6,7 +6,7 @@ using System.Linq;
 namespace LinqConsoleApp
 {
     public class LinqSamples
-    {
+    {/*
         public static IEnumerable<Emp> Emps { get; set; }
         public static IEnumerable<Dept> Depts { get; set; }
 
@@ -185,7 +185,7 @@ namespace LinqConsoleApp
          *  Jeśli dane zapytanie zwraca pojedynczy wynik możemy je wyświetlić w kontrolce
          *  TextBox WynikTextBox.
         */
-
+        /*
         /// <summary>
         /// SELECT * FROM Emps WHERE Job = "Backend programmer";
         /// </summary>
@@ -382,5 +382,7 @@ namespace LinqConsoleApp
 
             int a = 0;
         }
+        */
     }
+    
 }

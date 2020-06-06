@@ -1,5 +1,6 @@
 using cw3_apbd.Handlers;
 using cw3_apbd.Middleware;
+using cw3_apbd.Models_cw10;
 using cw3_apbd.Service;
 using cw3_apbd.Tools;
 using Microsoft.AspNetCore.Authentication;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.CodeAnalysis.Options;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,8 +33,13 @@ namespace cw3_apbd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<s17651Context>(options => 
+            {
+                options.UseSqlServer("Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s17651;Integrated Security=True");
+            });
             services.AddScoped<IDbStudent, DbStudent>();
-            services.AddScoped<IStudentsDBService, SqlServerDbService>();
+            //services.AddScoped<IStudentsDBService, SqlServerDbService>();
+            services.AddScoped<IStudentsDBService, EFSqlServerDbService>();
             services.AddScoped<IRequestLogService, FileLoggerService>();
 
             //Authetication HTTP Basic (cw7 zad1)
